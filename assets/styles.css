@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@400;600&family=Tilt+Prism&display=swap');
+
 *{
     --clr-option: white;
     --clr-bg: black;
@@ -21,23 +23,38 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 5rem;
 }
 
 .option-button{
-
+    color: black;
     padding: 1rem;
     padding-left: 5rem;
     padding-right: 5rem;
     margin: 2rem;
     margin-top: 3rem;
     border-radius: 0.5rem;
+    transition: 200ms ease-in-out;
 }
+
+.option-button a{
+    text-decoration: none;
+    color: currentColor;
+    font-family: 'Tilt Prism', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.options input{
+    padding: 1rem;
+    margin-bottom: 2rem;
+
+}
+
 
 #bg{
     position: relative;
     width: 80vw;
-    height: 100vh;
+    height: auto;
     overflow-y: -moz-hidden-unscrollable;
     scroll-behavior: none;
     margin-left: 5vw;
@@ -53,9 +70,97 @@ body{
     left: 30vw;
 }
 
+.options{
+    border-radius: 0.5rem;
+    background: rgba(150, 150, 150, 0.092);
+    background: linear-gradient(
+        to right-bottom,
+        rgba(255,255,255,0.7),
+        rgba(255,255,255,0.2),
+    );
+    backdrop-filter: blur(1rem);
+    box-shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.229);
+    box-shadow: 0.2rem 0.2rem 2.5rem rgba(255, 255, 255, 0.291);
+    padding-top: 5rem;
+    padding-bottom: 2rem;
+}
+
+
+.circle1,
+.circle2,
+.circle3,
+.circle4{
+    background: rgba(255, 255, 255, 0.123);
+    background: linear-gradient(
+        to right bottom,
+        rgba(255, 255, 255, 0.8),
+        rgba(255, 255, 255, 0.151)
+    );
+    height: 20rem;
+    width: 20rem;
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+}
+.circle1{
+    width: 18rem;
+    height: 18rem;
+    bottom: 10%;
+    left: 2%;
+}
+
+.circle2{
+    top: 5%;
+    left: 15%;
+}
+.circle3{
+    width: 10rem;
+    height: 10rem;
+    bottom: 15%;
+    left: 20%;
+}
+.circle4{
+    width: 15rem;
+    height: 15rem;
+    top: 25%;
+    left: 3%;
+}
+
+.circle1 img{
+    width: 18rem;
+    height: 18rem;
+    bottom: 10%;
+    left: 2%;
+}
+
+.circle2 img{
+    margin: 1rem;
+    width: 18rem;
+    height: 18rem;
+    top: 5%;
+    left: 15%;
+}
+
+.circle3 img{
+    width: 10rem;
+    height: 10rem;
+    bottom: 15%;
+    left: 10%;
+}
+
+.circle4 img{
+    width: 15rem;
+    height: 15rem;
+    top: 10%;
+    left: 5%;
+}
 
 /*Styling the buttons*/
-
 .option-button:hover{
     cursor: pointer;
+}
+
+.option-button:hover,
+.option-button:focus{
+    transform: scale(1.05);
 }
