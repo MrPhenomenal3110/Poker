@@ -1,0 +1,61 @@
+*{
+    --clr-option: white;
+    --clr-bg: black;
+}
+
+
+
+
+body{
+    background-color: black;
+}
+.game-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.options{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.option-button{
+
+    padding: 1rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    margin: 2rem;
+    margin-top: 3rem;
+    border-radius: 0.5rem;
+}
+
+#bg{
+    position: relative;
+    width: 80vw;
+    height: 100vh;
+    overflow-y: -moz-hidden-unscrollable;
+    scroll-behavior: none;
+    margin-left: 5vw;
+    margin-top: -5vh;
+    margin-right: 0;
+    translate: 10rem;
+    z-index: -1;
+}
+
+.game-options{
+    position: absolute;
+    top: 20vh;
+    left: 30vw;
+}
+
+
+/*Styling the buttons*/
+
+.option-button:hover{
+    cursor: pointer;
+}
